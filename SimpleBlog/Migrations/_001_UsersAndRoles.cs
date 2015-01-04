@@ -6,7 +6,7 @@ namespace SimpleBlog.Migrations
 {
     // parameter = version number
     [Migration(1)]    
-    public class _001_UsersAndRoles : Migration // Migration requires 2 abstract members
+    public class _001_UsersAndRoles : Migration // Migration requires 2 abstract members (Down and Up)
     {
         // method invoked when FluentMigrator decides that the db needs to be migrated (modifications made)
         public override void Up()
