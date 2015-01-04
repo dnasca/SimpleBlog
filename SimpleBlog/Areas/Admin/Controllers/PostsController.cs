@@ -7,6 +7,7 @@ using SimpleBlog.Infrastructure;
 
 namespace SimpleBlog.Areas.Admin.Controllers
 {
+    // specify that this controller is only available to users in the 'admin' role
     [Authorize(Roles = "admin")]
     [SelectedTab("posts")]
     public class PostsController : Controller

@@ -3,6 +3,7 @@
     Layout = null;
 }
 
+@* if the tab (ie. posts, users, etc) is selected, set as active (highlighted) *@
 @helper SelectedTabClass(string tabName)
 {
     if (tabName == ViewBag.SelectedTab)
@@ -35,8 +36,6 @@
         </ul>
         @RenderBody()
     </div>
-
-
 
 
     @Scripts.Render("~/admin/scripts")
